@@ -1,0 +1,28 @@
+Documentation:
+
+  Utilities:
+    procedure Clear();
+      Clear buffer and settup 2d mode
+    procedure Paint(); 
+      Flush buffer to screen
+    procedure SetColor ( RED , GREEN , BLUE );   
+      Set color to RGB
+        RED , GREE , BLUE must be in range [0..255]
+  Primitives :
+    Procedure Rectangle(const x1 , y1 , x2 , y2 : LongInt ) ; 
+      Draw a rectangle
+    Procedure Pixel ( const x , y : LongInt ) ; 
+      Put pixel
+    Procedure Line(const x1 , y1 , x2 , y2 : LongInt ) ; 
+      Draw a line
+    Procedure Polygon(const A : Array of TPoint ; Size : LongInt ) ; 
+      A draw a polygon with points in A
+    Procedure Circle ( const mx, my ,r : LongInt );
+      Draw a circle with radius R and center (mx , my)
+
+      
+    Procedure OutText(const x , y , Font : LongInt ; const Text : String ) ;
+      Draw a text in cords (x,y)
+      
+      Font:
+        TODO
